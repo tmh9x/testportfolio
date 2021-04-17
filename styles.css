@@ -5,6 +5,36 @@
   margin: 0;
 }
 
+h1 {
+  font-family: "Maven Pro", sans-serif;
+  text-transform: uppercase;
+  color: #141f29;
+  font-size: 3em;
+  letter-spacing: -3px;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+  color: #d91e41;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  max-width: 70%;
+  background: #e7e7e5;
+  margin: 0 auto;
+}
+
 header {
   background: black;
   color: white;
@@ -19,17 +49,95 @@ header {
   list-style-type: none;
 }
 
-.about-me:hover {
+.aboutLink:hover {
   color: #d91e41;
   text-decoration: underline;
 }
 
-.cv:hover {
+.cvLink:hover {
   color: #d91e41;
   text-decoration: underline;
 }
 
-.contact:hover {
+.contactLink:hover {
   color: #d91e41;
+  text-decoration: underline;
+}
+
+main {
+  margin: 2em auto;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.about {
+  border-bottom: solid grey 1px;
+}
+
+.cv {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-bottom: solid grey 1px;
+}
+
+.intro {
+  background: #d5d5d4;
+  margin: 2em 0;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+  border-top-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+.intro h2 {
+  font-family: "Maven Pro", sans-serif;
+  color: #141f29;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.curriculum {
+  margin-top: 2em;
+}
+
+.curItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.curItem {
+  font-family: "verdana", sans-serif;
+  padding: 0 1em;
+}
+
+.curriculum ul {
+  padding: 0;
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+
+.contactItem {
+  font-size: 1.5em;
+  font-family: "Brush Script MT", sans-serif;
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.contactItem:hover {
+  transform: skew(15deg);
+  color: #d91e41;
+  margin-top: -10px;
   text-decoration: underline;
 }
