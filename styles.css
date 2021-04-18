@@ -36,32 +36,49 @@ body {
 }
 
 header {
-  background: black;
-  color: white;
-  font-size: 1.5em;
-  padding: 2em;
+  background: #141f29;
+  color: #e7e7e5;
+  font-size: 1.25em;
+  padding: 0.5em;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  position: fixed;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: row;
   list-style-type: none;
 }
 
-.aboutLink:hover {
-  color: #d91e41;
-  text-decoration: underline;
+.nav li {
+  padding: 0 1.5em;
 }
 
-.cvLink:hover {
-  color: #d91e41;
-  text-decoration: underline;
+.navLeft {
+  padding: 0 2em;
 }
 
-.contactLink:hover {
+.aboutHover:hover {
   color: #d91e41;
-  text-decoration: underline;
+  text-decoration: line-through;
+}
+
+.cvHover:hover {
+  color: #d91e41;
+  text-decoration: line-through;
+}
+
+.contactHover:hover {
+  color: #d91e41;
+  text-decoration: line-through;
 }
 
 main {
@@ -71,6 +88,7 @@ main {
 }
 
 .about {
+  margin-top: 5em;
   border-bottom: solid grey 1px;
 }
 
