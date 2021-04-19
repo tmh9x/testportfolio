@@ -66,16 +66,13 @@ header {
   padding: 0 2em;
 }
 
-.aboutHover:hover {
-  color: #d91e41;
-  text-decoration: line-through;
+.nav a {
+  color: #e7e7e5;
+  text-decoration: none;
 }
 
-.cvHover:hover {
-  color: #d91e41;
-  text-decoration: line-through;
-}
-
+.aboutHover:hover,
+.cvHover:hover,
 .contactHover:hover {
   color: #d91e41;
   text-decoration: line-through;
